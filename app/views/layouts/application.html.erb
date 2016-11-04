@@ -9,14 +9,16 @@
 <body>
   <header>
     <div class="col-xs-3">
-      <div class="circle">
-        <br />
-        People say
-        <br />
-        Awesome
-        <br />
-        Things
-      </div>
+      <%= link_to root_path, class: 'logo' do %>
+        <div class="circle">
+          <br />
+          People say
+          <br />
+          Awesome
+          <br />
+         Things
+        </div>
+      <% end %>
     </div>
 
 
@@ -25,7 +27,7 @@
       Splurting out awesome quotes from history since 2016
     </div>
     <div class="col-xs-5 links">
-      <%= link_to 'Contribute', '#' %>
+      <%= link_to 'Contribute', new_quote_path %>
       <%= link_to 'About', '#' %>
   </header>
   <hr />
@@ -37,7 +39,7 @@
   <div class="footer">
     <div class="container">
       <div class="col-xs-6">
-        <%= link_to "This isn't enough, I need more", "#", class: 'next_quote' %>
+        <%= link_to "This isn't enough, I need more", root_path, class: 'next_quote' %>
       </div>
       <div class="col-xs-6 footer-blurb">
         Gloriously assembled in Hamburg, Germany by <a href="http://danieldegrassi.getforge.io"> Daniel.</a>
