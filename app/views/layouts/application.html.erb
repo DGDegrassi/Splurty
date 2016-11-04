@@ -30,8 +30,20 @@
   </header>
   <hr />
   <br class="clear" />
+  <div class="container">
+    <%= yield %>
+  </div>
 
-<%= yield %>
+  <div class="footer">
+    <div class="container">
+      <div class="col-xs-6">
+        <%= link_to "This isn't enough, I need more", "#", class: 'next_quote' %>
+      </div>
+      <div class="col-xs-6 footer-blurb">
+        Gloriously assembled in Hamburg, Germany by <a href="http://danieldegrassi.getforge.io"> Daniel.</a>
+        Want to build your own Splurty Web App?<a href="thefirehoseproject">Learn how to code here</a>
+    </div>
+  </div>
 
 </body>
 </html>
